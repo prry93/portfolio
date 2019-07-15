@@ -1,0 +1,18 @@
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  flex: 1 1 auto;
+  width: 100vw;
+  height: 40vh;
+  background-color: blue;
+}
+
+.bottom {
+  flex: 1 1 auto;
+  width: 100vw;
+  height: 60vh;
+  background-color: red;
+}
