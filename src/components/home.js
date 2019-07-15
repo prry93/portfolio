@@ -1,11 +1,13 @@
 import React from "react";
-import '../styles/home.css';
+import '../styles/home';
+import Menu from './menu';
 
 class Homepage extends React.Component {
 
   render() {
     return (
       <div className="flexContainer">
+        <Menu />
         <div className="top">
           <h1>Perry Lin</h1>
           <p>Maker of things</p>
