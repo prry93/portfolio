@@ -1,13 +1,12 @@
 import React from "react";
-import '../styles/home';
-import Menu from './menu';
+import "./home.css";
+import Menu from '../menu/menu';
 
-class Homepage extends React.Component {
+export default Homepage => {
 
-  render() {
     return (
       <div className="flexContainer">
-        <Menu />
+        <Menu pageWrapId={"page-wrap"} outerContainerId={"App"} />
         <div className="top">
           <h1>Perry Lin</h1>
           <p>Maker of things</p>
@@ -18,7 +17,5 @@ class Homepage extends React.Component {
         </div>
       </div>
     )
-  }
 }
 
-export default Homepage;

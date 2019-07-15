@@ -1,5 +1,5 @@
 import React from "react";
-import Homepage from './components/home';
+import Homepage from './components/home/home';
 
 
 class App extends React.Component {
@@ -7,8 +7,8 @@ class App extends React.Component {
   render() {
     return (
     <Homepage />
-    )
-  }
+    );
+  };
 
 }
 

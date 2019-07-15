@@ -43,5 +43,13 @@ body {
 }
 
 .bm-morph-shape {
-  
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }

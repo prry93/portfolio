@@ -1,10 +1,10 @@
 import React from "react";
 import {slide as Menu} from "react-burger-menu";
-import '../styles/menu';
+import "./menu.css";
 
 export default props => {
   return(
-    <Menu>
+    <Menu {...props}>
       <a className="menu-item" href="/">
         Home
       </a>
