@@ -1,10 +1,15 @@
 import React from "react";
 import {slide as Menu} from "react-burger-menu";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./menu.css";
+import Burger from "../../images/burgerMenu.png";
+// gets burger menu image from the correct directory, used in customBurgerIcon
+
 
 export default props => {
   return(
-    <Menu {...props}>
+    <Menu  {...props} customBurgerIcon={ <img src={Burger} alt="menu" />}>
+      
       <a className="menu-item" href="/">
         Home
       </a>
@@ -18,3 +23,4 @@ export default props => {
   );
 };
 
+// exported to home.js

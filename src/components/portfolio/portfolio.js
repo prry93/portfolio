@@ -1,14 +1,14 @@
 import React from "react";
 import Menu from '../menu/menu';
 
-function Contact() {
+function Portfolio() {
 
     return (
       <div className="flexContainer">
         <Menu pageWrapId={"page-wrap"} outerContainerId={"flexContainer"} />
         <div className="top">
           <h1>Perry Lin</h1>
-          <p>Contact Me!</p>
+          <p>Portfolio</p>
           
         </div>
         <div className="bottom">
@@ -19,4 +19,4 @@ function Contact() {
     )
 }
 
-export default Contact;
+export default Portfolio;

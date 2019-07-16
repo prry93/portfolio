@@ -2,14 +2,15 @@ import React from "react";
 import "./home.css";
 import Menu from '../menu/menu';
 
-export default Homepage => {
+function Homepage() {
 
     return (
       <div className="flexContainer">
-        <Menu pageWrapId={"page-wrap"} outerContainerId={"App"} />
+        <Menu pageWrapId={"page-wrap"} outerContainerId={"flexContainer"} />
         <div className="top">
           <h1>Perry Lin</h1>
           <p>Maker of things</p>
+          
         </div>
         <div className="bottom">
           <h2>About Me:</h2>
@@ -19,3 +20,4 @@ export default Homepage => {
     )
 }
 
+export default Homepage;
