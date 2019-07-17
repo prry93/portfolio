@@ -1,26 +1,31 @@
 import React from "react";
-import {slide as Menu} from "react-burger-menu";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import "./menu.css";
-import Burger from "../../images/burgerMenu.png";
+// import "./Menu.css";
+import { NavLink } from "react-router-dom";
+// import Burger from "../../images/burgerMenu.png";
 // gets burger menu image from the correct directory, used in customBurgerIcon
 
 
-export default props => {
-  return(
-    <Menu  {...props} customBurgerIcon={ <img src={Burger} alt="menu" />}>
-      
-      <a className="menu-item" href="/">
-        Home
-      </a>
-      <a className="menu-item" href="/portfolio">
-        Portfolio
-      </a>
-      <a className="menu-item" href="/contact">
-        Contact
-      </a>
-    </Menu>
+export default ({close}) => (
+    <div className="menu">
+      <ul>
+        <li>
+          <NavLink onClick={close} activeClassName="current" to="/">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink onClick={close} activeClassName="current" to="/portfolio">
+            Portfolio
+          </NavLink>
+        </li>
+        <li>
+          <NavLink onClick={close} activeClassName="current" to="/contact">
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+    </div>
   );
-};
+
 
 // exported to home.js

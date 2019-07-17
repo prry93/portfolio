@@ -1,12 +1,10 @@
 import React from "react";
 import "./home.css";
-import Menu from '../menu/menu';
 
 function Homepage() {
 
     return (
       <div className="flexContainer">
-        <Menu pageWrapId={"page-wrap"} outerContainerId={"flexContainer"} />
         <div className="top">
           <h1>Perry Lin</h1>
           <p>Maker of things</p>
