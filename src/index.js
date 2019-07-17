@@ -15,7 +15,6 @@ const App = () => (
   <div>
 
     <Router>
-
         <Popup
           modal
           overlayStyle={{ background: "rgba(255,255,255,0.98" }}
@@ -24,7 +23,6 @@ const App = () => (
         >
           {close => <Menu close={close} />}
         </Popup>
-
 
         <Route exact path="/" component={Homepage} />
         <Route path="/portfolio" component={Portfolio} />
