@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// import mailer from "./mailer";
+// import mailer from "./server/mailer.js";
 
 const app = express();
 app.use(bodyParser.json());
