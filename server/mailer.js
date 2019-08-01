@@ -1,7 +1,7 @@
-import nodemailer from 'nodemailer';
-// const nodemailer = require('nodemailer');
-import config from './config.js';
-// const config = require('./config');
+// import nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
+// import config from './config.js';
+const config = require('./config');
 
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -28,4 +28,4 @@ const send = ({ email, name, text }) => {
   })
 }
 
-export default send;
+module.exports = send;
