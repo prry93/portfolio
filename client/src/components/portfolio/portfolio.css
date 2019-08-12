@@ -1,0 +1,60 @@
+body {
+  background-color: darkgray;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 65vw 34vw;
+  grid-template-rows: 60vh 40vh;
+  grid-column-gap: 1vw;
+  grid-template-areas: "screen content"
+                       "carousel carousel";
+}
+
+.screen {
+  /* grid-area: screen; */
+  background-color: green;
+  text-align: center;
+}
+
+.screenContainer {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto ;
+  background-color: red;
+}
+
+.content {
+  /* grid-area: content; */
+  background-color: blue;
+}
+
+.carousel {
+  grid-area: carousel;
+  width: 100%;
+  margin: 1em auto;
+  background-color: grey;
+}
+
+.leftButton {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  background: none;
+}
+
+.rightButton {
+  float: right;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+}
+
+img {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+

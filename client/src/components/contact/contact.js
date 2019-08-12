@@ -1,4 +1,5 @@
 import React from 'react'
+import './contact.css'
 
 const ContactForm = () => (
   <form className="contact-form" method="POST" action="/contact">

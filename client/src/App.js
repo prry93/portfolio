@@ -47,7 +47,7 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
       </Router>
 
-        <p>{this.state.data}</p>
+        {/* <p>{this.state.data}</p> */}
 
     </div>
   )}
