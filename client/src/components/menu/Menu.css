@@ -8,8 +8,8 @@ body {
   display: inline-block;
   cursor: pointer;
   position: fixed;
-  right: 20px;
-  bottom: 40px;
+  left: 10px;
+  top: 20px;
   z-index: 9999;
   background: #fff;
   padding: 10px;
