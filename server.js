@@ -8,9 +8,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded( { extended: true }));
 
-app.get("/message", (req, res) => {
-  res.send({  express: "Server is working"});
-});
+// app.get("/message", (req, res) => {
+//   res.send({  express: "Server is working"});
+// });
 
 app.post('/contact', (req, res) => {
   const { email = '', name = '', message = ''} = req.body

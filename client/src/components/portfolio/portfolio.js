@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import "./portfolio.css"
 import Carousel from 'nuka-carousel'
+import Slides from './components/slides'
 
-import {img0, img1, img2, img3, img4, giphy, gem, cssGrid, igloo, arrowF, arrowB} from "./imageimport"
+import {img0, img1, img2, img3, img4, giphy, gem, cssGrid, igloo, arrowF, arrowB} from "./components/imageimport"
 
 
 class Portfolio extends Component {
@@ -17,27 +18,27 @@ class Portfolio extends Component {
       wrapAround: true,
       opacityScale: 0.5
     }
-    this.nextSlide = this.nextSlide.bind(this);
-    this.previousSlide = this.previousSlide.bind(this);
+    // this.nextSlide = this.nextSlide.bind(this);
+    // this.previousSlide = this.previousSlide.bind(this);
   }
 
-  nextSlide() {
-    this.setState({ slideIndex: this.state.slideIndex + 1 });
-    if (this.state.slideIndex === 4) {
-      this.setState({
-        slideIndex: this.state.slideIndex - 4
-      });
-    } 
-  }
+//   nextSlide() {
+//     this.setState({ slideIndex: this.state.slideIndex + 1 });
+//     if (this.state.slideIndex === 4) {
+//       this.setState({
+//         slideIndex: this.state.slideIndex - 4
+//       });
+//     } 
+//   }
 
-  previousSlide() {
-    this.setState({ slideIndex: this.state.slideIndex - 1 });   
-     if (this.state.slideIndex === 0) {
-      this.setState({
-        slideIndex: this.state.slideIndex + 4
-      })
-  }
- }
+//   previousSlide() {
+//     this.setState({ slideIndex: this.state.slideIndex - 1 });   
+//      if (this.state.slideIndex === 0) {
+//       this.setState({
+//         slideIndex: this.state.slideIndex + 4
+//       })
+//   }
+//  }
 
 // Added Slides function to manually change the slide index to change slide shown, instead of using the previous/next buttons from the component.
 //  Default previous/next functions do not work when slidesToShow is more than 1. 
@@ -60,7 +61,8 @@ class Portfolio extends Component {
           <div className="content">
             <img src={screencaps} alt="text content"/>
           </div>
-          <div className="carousel" > 
+          <Slides />
+          {/* <div className="carousel" > 
             <Carousel 
               slidesToShow={this.state.slidesToShow}
               transitionMode={this.state.transitionMode}
@@ -83,12 +85,14 @@ class Portfolio extends Component {
               
               </Carousel>
 
-          </div>
+          </div> */}
         </div>
 
       </div>
     )
   }
 }
+
+
 
 export default Portfolio;
