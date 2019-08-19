@@ -36,7 +36,16 @@ class Slides extends Component{
   }
  }
 
+ // Added Slides function to manually change the slide index to change slide shown, instead of using the previous/next buttons from the component.
+//  Default previous/next functions do not work when slidesToShow is more than 1. 
+// Ex: when slideToShow is 3 and length is 3, carousel won't move at all. SlideToShow at 2, length at 3 will have carousel move next once then not work.
+// If statements will cycle the carousel back to the end/beginning.
+
   render() {
+        const images = [img0, img1, img2, img3, img4];
+    // Assigned images to a variable since React won't directly let me render an array of objects
+    const screencaps = images[this.state.slideIndex];
+    // screencaps will pair the src of each image with with the slide index. In the return, a img tag will display the correct image associated with the index.
     return(
       <div className="carousel" > 
       <Carousel 

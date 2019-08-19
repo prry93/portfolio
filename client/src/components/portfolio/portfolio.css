@@ -24,32 +24,52 @@ body {
 }
 
 .content {
-  /* grid-area: content; */
+  grid-area: content;
   background-color: blue;
 }
 
 .carousel {
   grid-area: carousel;
+  display: grid;
+  grid-template-columns: 1fr 90vw 1fr;
+  grid-template-areas: "leftButton carouselContent rightButton"; 
+}
+
+.carouselContent {
+  grid-area: carouselContent;
   width: 100%;
   margin: 1em auto;
   background-color: grey;
 }
 
+.left {
+  grid-area: leftButton;
+  display: flex;
+  align-items: center;
+  /* flex and align moves .leftbutton to center  */
+}
+
 .leftButton {
-  float: left;
-  width: 80px;
-  height: 80px;
+  width: auto;
+  height: auto;
   background-color: transparent;
   border: none;
   background: none;
 }
 
+.right {
+  grid-area: rightButton;
+  display: flex;
+  align-items: center;
+}
+
 .rightButton {
-  float: right;
-  width: 80px;
-  height: 80px;
+  align-content: end;
+  width: auto;
+  height: auto;
   background-color: transparent;
   border: none;
+  background: none;
 }
 
 img {
