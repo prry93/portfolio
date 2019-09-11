@@ -1,0 +1,37 @@
+ [ 
+  {
+    "id": 1,
+    "title": "Gem Guess Game",
+    "paragraph": "Gem Guess is a project that showcases all the basic skills a front-end developer needs, and turns it into a neat game. The objective of the game is to click on gems with unknown randomly assigned values to try and add up your score to match a randomized target value. This project is designed to showcase how Javascript can be used to give the elements on the page interactivity and dynamically generate new values every time they play again.",
+    "skills": "Javascript, HTML, CSS, CSS Grid",
+    "links": ["google", "aol"]
+  },
+  {
+    "id": 2,
+    "title": "Giphy Generator",
+    "paragraph": "The modern internet has shifted away from static assets to dynamically generated elements, so it would be fitting to make a project that dynamically generates non-static images; gifs. With Giphy Generator, you can search for any term, create a tag button from that term, and click the newly created button to populate the screen with gifs based on that search term. Giphy Generator does this by using jQuery to make an ajax request to Giphy’s API and render the images for users to enjoy.",
+    "skills": "jQuery, HTML, CSS, Giphy API",
+    "links": ["google", "aol"]
+  },
+  {
+    "id": 3,
+    "title": "Igloos \"R\" Us",
+    "paragraph": "Every product needs to have its core idea conveyed to prospective buyers, and Igloos \"R\" US is a Bootstrap-based product landing page that aims to do just that. Igloos \"R\" US uses Bootstrap as its framework to make a page that is a scalable, mobile-responsive website in order to reach the most amount of potential customers. This allows the webpage to display its information and not have to worry about screen compatibility issues getting in the way of properly conveying the page’s message.",
+    "skills": "Bootstrap, HTML, CSS, Javascript",
+    "links": ["google", "aol"]
+  },
+  {
+    "id": 4,
+    "title": "CSS Grid Technical Document",
+    "paragraph": "Technical documentations serve to provide users relevant information in an organized format, and CSS grid layout is just the right tool to create one. By using CSS grid layouts, we have a page that organizes the information into sections and lets the user easily navigate using the page’s fixed sidebar layout with a scrollable page. When seeking information, you might want to cross-reference other sections and with this page’s particular layout, you can easily jump to different topics and find the most relevant information with ease.",
+    "skills": "CSS Grid, CSS, HTML",
+    "links": ["google", "aol"]
+  },
+  {
+    "id": 5,
+    "title": "Igloos \"R\" Us",
+    "paragraph": "Every product needs to have its core idea conveyed to prospective buyers, and Igloos \"R\" Us is a Bootstrap-based product landing page that aims to do just that. Igloos \"R\" US uses Bootstrap as its framework to make a page that is a scalable, mobile-responsive website in order to reach the most amount of potential customers. This allows the webpage to display its information and not have to worry about screen compatibility issues getting in the way of properly conveying the page’s message.",
+    "skills": "Bootstrap, HTML, CSS, Javascript",
+    "links": ["google", "aol"]
+  }
+]

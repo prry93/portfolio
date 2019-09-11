@@ -1,34 +1,58 @@
 body {
-  background-color: darkgray;
+  background: linear-gradient(120deg, #000000 0%, rgba(77,86,92,1) 10%, #000000 20%, rgba(77,86,92,1) 30%, #000000 40%, rgba(77,86,92,1) 50%, #000000 60%, rgba(77,86,92,1) 70%, #000000 80%, rgba(77,86,92,1) 90%, #000000 100%);
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 65vw 34vw;
+  grid-template-columns: 59vw 41vw;
   grid-template-rows: 60vh 40vh;
-  grid-column-gap: 1vw;
+  /* grid-column-gap: 1vw; */
   grid-template-areas: "screen content"
                        "carousel carousel";
 }
 
 .screen {
-  /* grid-area: screen; */
-  background-color: green;
+  /* Top left side of viewport */
+  /* background-color: green; */
   text-align: center;
 }
 
 .screenContainer {
-  width: 85%;
-  height: 100%;
-  margin: 0 auto ;
-  background-color: red;
+  /* The entire area that the screencaps are displayed*/
+  /* width: 83%;
+  height: 88%;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  border: 2px solid whitesmoke; */
 }
 
 .content {
+  /* Top right side of the viewport */
   grid-area: content;
-  background-color: blue;
+}
+
+.contentContainer{
+  font-size: 1.05em;
+  width: 87%;
+  height: 88.8%;
+  background-color: whitesmoke;
+  padding-left: 0.5em;
+}
+
+.paragraph .paragraph2 {
+  font-size: 0.85em;
+}
+
+.paragraph2 {
+  font-weight: normal;
+}
+
+.content .skills,
+.content .paragraph2 {
+  display: inline;
 }
 
 .carousel {
+  /* bottom half of the viewport */
   grid-area: carousel;
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
@@ -36,13 +60,16 @@ body {
 }
 
 .carouselContent {
+  /* The carousel and slide portion of the grid */
   grid-area: carouselContent;
   width: 100%;
   margin: 1em auto;
-  background-color: grey;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+  background-color: rgb(125,125,125);
 }
-
-.left {
+  .left {
+  /* left end of carousel grid */
   grid-area: leftButton;
   display: flex;
   align-items: center;
@@ -58,6 +85,7 @@ body {
 }
 
 .right {
+  /* right end of carousel grid */
   grid-area: rightButton;
   display: flex;
   align-items: center;
@@ -73,7 +101,8 @@ body {
 }
 
 img {
-  max-width: 90%;
+  /* Styling for carousel slides */
+  max-width: 95%;
   margin: 0 auto;
 }
 
