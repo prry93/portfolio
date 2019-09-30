@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Menu.css";
 import { NavLink } from "react-router-dom";
 // import Burger from "../../images/burgerMenu.png";
 // gets burger menu image from the correct directory, used in customBurgerIcon
@@ -27,5 +26,3 @@ export default ({close}) => (
     </div>
   );
 
-
-// exported to home.js

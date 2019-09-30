@@ -1,52 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
   background: linear-gradient(120deg, #000000 0%, rgba(77,86,92,1) 10%, #000000 20%, rgba(77,86,92,1) 30%, #000000 40%, rgba(77,86,92,1) 50%, #000000 60%, rgba(77,86,92,1) 70%, #000000 80%, rgba(77,86,92,1) 90%, #000000 100%);
+  font-family: 'Raleway', sans-serif;
 }
+
 .wrapper {
   display: grid;
-  grid-template-columns: 59vw 41vw;
-  grid-template-rows: 60vh 40vh;
-  /* grid-column-gap: 1vw; */
-  grid-template-areas: "screen content"
-                       "carousel carousel";
+  grid-template-columns: 52vw 48vw;
+  grid-template-rows: 8vh 50vh 30vh 12vh;
+  /* grid-row-gap: 1vw; */
+  grid-template-areas: " previous previous "
+                       "screen content"
+                       "carousel carousel"
+                       " next next ";
+}
+
+.previous{
+  grid-area: previous;
+  margin: 0;
+  text-align: center;
+}
+
+.prevButton {
+ color:white;
+ background-color: transparent;
+ border: transparent;
+ font-size: 2.2em;
+ height: 70%;
 }
 
 .screen {
   /* Top left side of viewport */
-  /* background-color: green; */
   text-align: center;
-}
-
-.screenContainer {
-  /* The entire area that the screencaps are displayed*/
-  /* width: 83%;
-  height: 88%;
-  margin-top: 1.5em;
-  margin-left: 1em;
-  border: 2px solid whitesmoke; */
 }
 
 .content {
   /* Top right side of the viewport */
   grid-area: content;
+  width: 90%;
+  height: 97%;
+  margin: 0;
 }
 
 .contentContainer{
-  font-size: 1.05em;
-  width: 87%;
-  height: 88.8%;
-  background-color: whitesmoke;
-  padding-left: 0.5em;
+  font-size: 1.03em;
+  height: inherit;
+  width: inherit;
+  background-color: #f2f3f4;
+  padding: 0.5em 1em ;
+  line-height: 140%;
 }
 
-.paragraph .paragraph2 {
-  font-size: 0.85em;
+.paragraph {
+  font-weight: 500;
 }
 
 .paragraph2 {
   font-weight: normal;
+  font-size: 0.85em;
 }
 
-.content .skills,
+.content .headline,
 .content .paragraph2 {
   display: inline;
 }
@@ -62,11 +77,12 @@ body {
 .carouselContent {
   /* The carousel and slide portion of the grid */
   grid-area: carouselContent;
-  width: 100%;
+  width: 95%;
+  height: 90%;
   margin: 1em auto;
   border: 1px solid whitesmoke;
   border-radius: 15px;
-  background-color: rgb(125,125,125);
+  background-color: #a9a9b0;
 }
   .left {
   /* left end of carousel grid */
@@ -100,9 +116,25 @@ body {
   background: none;
 }
 
+.next{
+  grid-area: next;
+  margin: 0;
+  text-align: center;
+}
+
+.nextButton {
+  position: absolute;
+  bottom: 0;
+ color:white;
+ background-color: transparent;
+ border: transparent;
+ font-size: 2.2em;
+}
+
 img {
   /* Styling for carousel slides */
-  max-width: 95%;
+  max-width: 85%;
+  /* max-height:  */
   margin: 0 auto;
 }
 

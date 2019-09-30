@@ -1,5 +1,26 @@
-.contact-form{
-  text-align: center;
+.form-container{
+  position: absolute;
   width: 100vw;
   height: 100vh;
+  text-align: center;
+}
+
+.contact-form{
+  margin: 10vh auto 0;
+  width: 42vw;
+  height: 75vh;
+  background-color: green;
+}
+
+input{
+  width: 50%;
+}
+
+.message-text{
+  width: 50%;
+}
+
+.contact-title{
+  font-weight: bold;
+  text-decoration: underline;
 }

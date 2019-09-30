@@ -1,11 +1,11 @@
  [ 
-  {
-    "id": 1,
-    "title": "Gem Guess Game",
-    "paragraph": "Gem Guess is a project that showcases all the basic skills a front-end developer needs, and turns it into a neat game. The objective of the game is to click on gems with unknown randomly assigned values to try and add up your score to match a randomized target value. This project is designed to showcase how Javascript can be used to give the elements on the page interactivity and dynamically generate new values every time they play again.",
-    "skills": "Javascript, HTML, CSS, CSS Grid",
-    "links": ["google", "aol"]
-  },
+{
+  "id": 1,
+  "title": "Igloos \"R\" Us",
+  "paragraph": "Every product needs to have its core idea conveyed to prospective buyers, and Igloos \"R\" Us is a Bootstrap-based product landing page that aims to do just that. Igloos \"R\" US uses Bootstrap as its framework to make a page that is a scalable, mobile-responsive website in order to reach the most amount of potential customers. This allows the webpage to display its information and not have to worry about screen compatibility issues getting in the way of properly conveying the page’s message.",
+  "skills": "Bootstrap, HTML, CSS, Javascript",
+  "links": ["google", "aol"]
+},
   {
     "id": 2,
     "title": "Giphy Generator",
@@ -29,9 +29,9 @@
   },
   {
     "id": 5,
-    "title": "Igloos \"R\" Us",
-    "paragraph": "Every product needs to have its core idea conveyed to prospective buyers, and Igloos \"R\" Us is a Bootstrap-based product landing page that aims to do just that. Igloos \"R\" US uses Bootstrap as its framework to make a page that is a scalable, mobile-responsive website in order to reach the most amount of potential customers. This allows the webpage to display its information and not have to worry about screen compatibility issues getting in the way of properly conveying the page’s message.",
-    "skills": "Bootstrap, HTML, CSS, Javascript",
+    "title": "Gem Guess Game",
+    "paragraph": "Gem Guess is a project that showcases all the basic skills a front-end developer needs, and turns it into a neat game. The objective of the game is to click on gems with unknown randomly assigned values to try and add up your score to match a randomized target value. This project is designed to showcase how Javascript can be used to give the elements on the page interactivity and dynamically generate new values every time they play again.",
+    "skills": "Javascript, HTML, CSS, CSS Grid",
     "links": ["google", "aol"]
   }
 ]

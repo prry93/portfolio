@@ -10,24 +10,6 @@ import Contact from './components/contact/contact';
 import Portfolio from './components/portfolio/portfolio';
 
 class App extends Component {
-  // state = {
-  //   data: null
-  // };
-
-  // componentDidMount() {
-  //   this.callBackendAPI()
-  //   .then(res => this.setState({ data: res.express }))
-  //   .catch( err => console.log(err));
-  // }
-  // callBackendAPI = async () => {
-  //   const response = await fetch("/message");
-  //   const body = await response.json();
-
-  //   if (response.status !== 200) {
-  //     throw Error(body.message)
-  //   }
-  //   return body;
-  // };
 
   render() {
     return (
@@ -46,8 +28,6 @@ class App extends Component {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
       </Router>
-
-        {/* <p>{this.state.data}</p> */}
 
     </div>
   )}
