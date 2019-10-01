@@ -32,11 +32,22 @@
   width: 100vw;
   height: 55vh;
   background-color: #f2f3f4;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .bottom-text {
   margin: 0 auto;
   width: 55%;
+  text-align: center;
   background-color: green;
+}
+
+.porfolioButton {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ color: #000;
+ background-color: transparent;
+ border: transparent;
+ font-size: 3em;
 }

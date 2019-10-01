@@ -3,13 +3,24 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
+  background: linear-gradient(120deg, #000000 0%, rgba(77,86,92,1) 20%, #000000 40%, rgba(77,86,92,1) 60%, #000000 80%, rgba(77,86,92,1) 100%);
+
 }
 
 .contact-form{
-  margin: 10vh auto 0;
-  width: 42vw;
-  height: 75vh;
-  background-color: green;
+  margin: 7vh auto 0;
+  width: 35vw;
+  height: 70vh;
+  background-color: whitesmoke;
+  font-size: 1.3em;
+}
+
+.portButton {
+ color: whitesmoke;
+ background-color: transparent;
+ border: 1.5px solid whitesmoke;
+ border: transparent;
+ font-size: 2.4em;
 }
 
 input{

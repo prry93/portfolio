@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import { NavLink } from "react-router-dom";
 import "./portfolio.css"
+
 import Carousel from 'nuka-carousel'
 import ContentData from './components/content.json'
 import Videos from './components/videoimport'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleUp, faChevronCircleDown} from '@fortawesome/free-solid-svg-icons'
 // import Video from './components/video'
@@ -54,11 +57,15 @@ class Portfolio extends Component {
     return (
       <div>
         <div className="wrapper">
+
           <div className="previous">
-            <button className="prevButton">
-              <FontAwesomeIcon icon={faChevronCircleUp} />
-            </button>
+            <NavLink to="/">
+              <button className="prevButton">
+                <FontAwesomeIcon icon={faChevronCircleUp} />
+              </button>              
+            </NavLink>
           </div>
+
           <div className="screen">
             <div
               style={{
@@ -121,10 +128,13 @@ class Portfolio extends Component {
               <button className="rightButton" onClick={this.nextSlide}><img src={arrowF} alt="forward arrow"></img></button>
             </div>
           </div>
+
           <div className="next">
-            <button className="nextButton">
-              <FontAwesomeIcon icon={faChevronCircleDown} />
-            </button>
+            <NavLink to="/contact">
+              <button className="nextButton">
+                <FontAwesomeIcon icon={faChevronCircleDown} />
+              </button>
+            </NavLink>
           </div>
         </div>
 

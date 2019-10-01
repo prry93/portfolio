@@ -1,8 +1,18 @@
 import React from 'react'
 import './contact.css'
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronCircleUp} from '@fortawesome/free-solid-svg-icons'
 
 const ContactForm = () => (
   <div className="form-container">
+      <div className="previous">
+            <NavLink to="/portfolio">
+              <button className="portButton">
+                <FontAwesomeIcon icon={faChevronCircleUp} />
+              </button>              
+            </NavLink>
+          </div>
     <form className="contact-form" method="POST" action="/contact">
       <h1 className="contact-title">Contact</h1>
       <h3> Want to get in touch ?</h3>

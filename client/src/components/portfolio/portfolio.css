@@ -26,7 +26,7 @@ body {
  color:white;
  background-color: transparent;
  border: transparent;
- font-size: 2.2em;
+ font-size: 2.4em;
  height: 70%;
 }
 
@@ -78,7 +78,7 @@ body {
   /* The carousel and slide portion of the grid */
   grid-area: carouselContent;
   width: 95%;
-  height: 90%;
+  height: 88%;
   margin: 1em auto;
   border: 1px solid whitesmoke;
   border-radius: 15px;
@@ -128,7 +128,7 @@ body {
  color:white;
  background-color: transparent;
  border: transparent;
- font-size: 2.2em;
+ font-size: 2.4em;
 }
 
 img {
