@@ -1,3 +1,4 @@
+
 .form-container{
   position: absolute;
   width: 100vw;
@@ -7,10 +8,10 @@
 
 }
 
-.contact-form{
+.contact-form {
   margin: 7vh auto 0;
   width: 35vw;
-  height: 70vh;
+  height: 78vh;
   background-color: whitesmoke;
   font-size: 1.3em;
 }
@@ -21,17 +22,35 @@
  border: 1.5px solid whitesmoke;
  border: transparent;
  font-size: 2.4em;
+ outline: none;
 }
 
 input{
-  width: 50%;
+  width: 60%;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .message-text{
-  width: 50%;
+  width: 60%;
+  border-radius: 5px;
+}
+
+.messageForm {
+  padding-top: 1em;
 }
 
 .contact-title{
   font-weight: bold;
   text-decoration: underline;
+  padding-top: 1em;
+}
+
+.submitContact {
+  margin-top: 1em;
+  padding: 0.5em 2em;
+  border-radius: 10px;
+  font-size: 1.2em;
+  background-color: #1b1b1b;
+  color: whitesmoke;
 }

@@ -30,14 +30,14 @@ const ContactForm = () => (
           </label>
         </div>
 
-        <div className="form-field">
+        <div className="form-field messageForm">
           <label htmlFor="message">
             <div className="label-content">Message:</div>
-            <textarea className="message-text" name="message" rows="5" required />
+            <textarea className="message-text" name="message" rows="8" required />
           </label>
         </div>
 
-        <button type="submit">Send</button>
+        <button className="submitContact" type="submit">Get In Touch</button>
     </form>
   </div>
 )

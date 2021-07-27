@@ -19,7 +19,7 @@ function Homepage() {
         <div className="bottom">
           <div className="bottom-text">
             <h2>About Me:</h2>
-            <p>Insert text here.</p>
+            <p>A prospective applicant with 5+ years of experience in a multitude of career fields that required extensive interpersonal communication and a meticulous attention to detail. Looking to utilize this accumulated knowledge in a new career path to challenge myself and further develop my skills.</p>
           </div>
           <div >
             <NavLink to="/portfolio">
